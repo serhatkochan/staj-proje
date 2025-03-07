@@ -50,10 +50,10 @@ Eğer sepet boşsa, "Sepetiniz boş!" uyarısı çıkacak.
 
 Bu projeyi Vite kullanarak oluşturabilirsin. Eğer daha önce yapmadıysan, şu komutu çalıştırarak hızlıca bir proje başlatabilirsin:
 
-npm create vite@latest ejderha-pazari
-cd ejderha-pazari
-npm install
-npm run dev
+- npm create vite@latest ejderha-pazari
+- cd ejderha-pazari
+- npm install
+- npm run dev
 
 Ayrıca, React Router kütüphanesini projeye eklemelisin:
 
