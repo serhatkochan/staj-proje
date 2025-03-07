@@ -42,7 +42,11 @@ Eğer sepet boşsa, "Sepetiniz boş!" uyarısı çıkacak.
 
 ## 🎯 Öğreneceklerin
 
-✅ React'te useState kullanımı✅ onClick eventleri ile interaktif öğeler✅ React Router ile sayfa yönlendirme✅ Array metotları (map, filter, reduce) ile liste yönetimi✅ Koşullu render işlemleri (Sepet boşsa farklı mesaj gösterme)
+✅ React'te useState kullanımı
+✅ onClick eventleri ile interaktif öğeler
+✅ React Router ile sayfa yönlendirme
+✅ Array metotları (map, filter, reduce) ile liste yönetimi
+✅ Koşullu render işlemleri (Sepet boşsa farklı mesaj gösterme)
 
 Bu projeyi Vite kullanarak oluşturabilirsin. Eğer daha önce yapmadıysan, şu komutu çalıştırarak hızlıca bir proje başlatabilirsin:
 
