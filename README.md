@@ -47,7 +47,7 @@ Bu proje, **TV Maze API** kullanarak popüler TV şovlarını listeleyen, detayl
 ✅ **Redux Toolkit ile state yönetimi yapma.**\
 ✅ **Tailwind CSS kullanarak modern bir arayüz tasarlama.**\
 ✅ **TypeScript ile güvenli ve ölçeklenebilir bir React uygulaması geliştirme.**\
-✅ **JavaScript Array Metodları (filter, find vb.) ile veri işlemleri yapma.**
+✅ **JavaScript Metodları (filter, find vb.) ile işlemler yapma.**
 
 ---
 
