@@ -1,65 +1,82 @@
-# Ejderha Pazari - React Sepet Uygulamasi 🐉🛍️
+# 🎬 React TV Guide
 
 ## Proje Açıklaması
 
-Bu proje, React kullanarak bir alışveriş sepeti mantığını anlamanı sağlayacak interaktif bir uygulamadır. Kullanıcılar büyülü eşyaları sepete ekleyip çıkarabilecek, toplam fiyatı görebilecek ve sipariş verebilecekler.
+Bu proje, **TV Maze API** kullanarak popüler TV şovlarını listeleyen, detaylarını görüntüleyen ve favorilere ekleme gibi özellikler sunan bir React uygulamasıdır. Kullanıcılar istedikleri dizi veya programı arayabilir, detaylarını inceleyebilir ve favori listelerine ekleyebilirler.
+
+---
 
 ## 📌 Yapılacaklar Listesi
 
-## 1. Ürün Listesi Sayfası
+### 1. **Ana Sayfa (TV Şovları Listesi)**
 
-"Ejderha Pazarı" başlığı gösterilecek.
+- Ana sayfada popüler TV şovları listelenecek.
+- Her şov için **isim, afiş ve "Detayları Gör" butonu** yer alacak.
+- Kullanıcı bir şovu arayabilecek ve sonuçlar dinamik olarak filtrelenecek.
+- **Tailwind CSS ile şık bir tasarım uygulanacak.**
 
-3-5 farklı büyülü eşya olacak (Örn: Ateş Kılıcı, Görünmezlik Pelerini, Büyü Kitabı vb.).
+### 2. **Şov Detay Sayfası**
 
-Her ürün için isim, fiyat ve "Sepete Ekle" butonu olacak.
+- Kullanıcı bir şovun detaylarını görmek için "Detayları Gör" butonuna tıklayacak.
+- Şovun **adı, afişi, açıklaması, yayın tarihi ve oyuncuları** gösterilecek.
+- Kullanıcı şovu **favorilerine ekleyip çıkarabilecek** (Redux Toolkit kullanılacak).
+- "Geri Dön" butonu ile ana sayfaya yönlendirme yapılacak.
 
-"Sepete Ekle" butonuna tıklanınca ürün sepete eklenecek.
+### 3. **Favoriler Sayfası**
 
-React Router kullanılacak ve "Sepete Git" butonu ile sepet sayfasına yönlendirilecek.
+- Kullanıcı **favorilerine eklediği şovları bu sayfada görebilecek**.
+- Favorilere eklenen şovlar **Redux Toolkit ile state yönetimi kullanılarak saklanacak**.
+- Kullanıcı favori listesinden şovları kaldırabilecek.
 
-## 2. Sepet Sayfası (React Router Kullanımı)
+### 4. **Ekstra Sayfalar**
 
-Sepet, farklı bir sayfada olacak ve /sepet rotasında gösterilecek.
+- Kullanılabilir diğer API'leri analiz ederek, uygulamana entegre edebileceğin zengin listeleme ve detay sayfaları oluşturabilirsin.
 
-Sepete eklenen ürünler listelenecek.
+### 5. **Ek Özellikler**
 
-Kullanıcı ürünleri sepetten çıkarabilecek.
+- **Pagination:** API'den çektiğin veriler çok fazla ise sayfalama ekle.
+- **Detaylı Arama Filtreleri:** Tür, yayın yılı gibi filtreleme seçenekleri ekleyerek aramayı detaylandır.
+- **Responsive Tasarım:** Tailwind CSS kullanarak, uygulamanın tüm cihazlarda uyumlu çalışmasını sağla.
 
-Toplam fiyat dinamik olarak hesaplanacak.
-
-"Sepeti Boşalt" butonu olacak ve tıklanınca sepet sıfırlanacak.
-
-"Geri Dön" butonu olacak ve tıklanınca ana sayfaya yönlendirilecek.
-
-## 3. Sipariş Tamamlama
-
-"Satın Al" butonu olacak.
-
-Eğer sepette ürün varsa, "Siparişiniz Onaylandı!" mesajı gösterilecek.
-
-Eğer sepet boşsa, "Sepetiniz boş!" uyarısı çıkacak.
+---
 
 ## 🎯 Öğreneceklerin
 
-- ✅ React'te useState kullanımı
-- ✅ onClick eventleri ile interaktif öğeler
-- ✅ React Router ile sayfa yönlendirme
-- ✅ Array metotları (map, filter, reduce) ile liste yönetimi
-- ✅ Koşullu render işlemleri (Sepet boşsa farklı mesaj gösterme)
+✅ **React Router** kullanarak sayfa yönlendirme yapma.\
+✅ **fetch API ile dış veri kaynaklarına bağlanma.**\
+✅ **Redux Toolkit ile state yönetimi yapma.**\
+✅ **Tailwind CSS kullanarak modern bir arayüz tasarlama.**\
+✅ **TypeScript ile güvenli ve ölçeklenebilir bir React uygulaması geliştirme.**\
+✅ **JavaScript Array Metodları (filter, find vb.) ile veri işlemleri yapma.**
 
-Bu projeyi Vite kullanarak oluşturabilirsin. Eğer daha önce yapmadıysan, şu komutu çalıştırarak hızlıca bir proje başlatabilirsin:
+---
 
-- npm create vite@latest ejderha-pazari
-- cd ejderha-pazari
-- npm install
-- npm run dev
+## 🚀 Proje Kurulumu
 
-Ayrıca, React Router kütüphanesini projeye eklemelisin:
+Projeyi **Vite** kullanarak oluşturabilirsin. Eğer daha önce yapmadıysan, şu komutları çalıştırarak hızlıca başlatabilirsin:
 
-npm install react-router-dom
+```sh
+npm create vite@latest react-tv-guide --template react-ts
+cd react-tv-guide
+npm install
+npm run dev
+```
 
-React Router dokümanlarını inceleyerek nasıl kullanılacağını öğrenebilirsin:🔗 [React Router Dokümantasyonu](https://reactrouter.com/)
+Ayrıca, **React Router, Redux Toolkit ve TypeScript destekli paketleri** projeye eklemelisin:
 
-Bu projeyi tamamladıktan sonra, React'in state yönetimi, event handling ve sayfa yönlendirme konularında çok daha sağlam bir temel atmış olacaksın! 🚀Bol şans! 🧙‍♂️🔥
+```sh
+npm install react-router-dom @reduxjs/toolkit react-redux
+```
+
+### 📌 Dokümantasyonlar
+
+- 🔗 [Vite Dokümantasyonu](https://vitejs.dev/guide/)
+- 🔗 [React Dokümantasyonu](https://react.dev/)
+- 🔗 [React Router Dokümantasyonu](https://reactrouter.com/en/main)
+- 🔗 [Redux Toolkit Dokümantasyonu](https://redux-toolkit.js.org/)
+- 🔗 [Tailwind CSS Dokümantasyonu](https://tailwindcss.com/docs/installation)
+
+Bu projeyi tamamladıktan sonra, **state yönetimi, API ile veri çekme, TypeScript kullanımı ve sayfa yönlendirme** konularında kendini geliştirmiş olacaksın! 🎬✨
+
+**Bol şans! 🎥🍿**
 
